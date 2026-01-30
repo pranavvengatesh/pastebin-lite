@@ -7,7 +7,7 @@ export default function CreatePaste() {
   const [url, setUrl] = useState("");
 
   async function createPaste() {
-    const res = await fetch("http://localhost:5000/api/pastes", {
+    const res = await fetch("https://pastebin-lite-backend-4ojs.onrender.com/api/pastes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
