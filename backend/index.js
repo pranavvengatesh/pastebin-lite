@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-import pasteRoutes from "./routes/pasteroutes.js";
+import pasteRoutes from "./routes/pasteRoutes.js";
 dotenv.config();
 
 const app = express();
