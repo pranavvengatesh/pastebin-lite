@@ -7,7 +7,7 @@ export default function ViewPaste() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/pastes/${id}`, {
+    fetch(`https://pastebin-lite-backend-4ojs.onrender.com/api/pastes/${id}`, {
       cache: "no-store"
     })
       .then(res => {
