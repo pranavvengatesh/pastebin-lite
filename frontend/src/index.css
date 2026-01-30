@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Center container */
+.container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+/* Inputs */
+textarea,
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+/* Result link box */
+.result {
+  margin-top: 20px;
+  padding: 14px;
+  background: #f1f5ff;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+.result a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.result a:hover {
+  text-decoration: underline;
+}
+
+/* Paste display */
+.paste-box {
+  white-space: pre-wrap;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+/* Error */
+.error {
+  color: #dc2626;
+  text-align: center;
+  font-weight: 600;
+}
