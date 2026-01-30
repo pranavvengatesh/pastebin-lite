@@ -15,11 +15,9 @@ A lightweight Pastebin-like application built as part of a technical assignment.
 ## 🚀 Live URLs
 
 Frontend:
-https://pastebin-lite.vercel.app
-
+https://pastebin-lite-green-delta.vercel.app
 Backend API:
 https://pastebin-lite-backend-4ojs.onrender.com
-
 ---
 
 ## 📡 API Endpoints
