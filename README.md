@@ -2,7 +2,7 @@
 
 A lightweight Pastebin-like application built as part of a technical assignment.
 
-## 🔧 Tech Stack
+## 🔧 Tech Stack used MERN 
 - Frontend: React (Vite)
 - Backend: Node.js, Express
 - Database: MongoDB Atlas
