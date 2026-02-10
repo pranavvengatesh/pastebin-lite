@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                echo "bat how are you"
+                echo "bat how are you iam fine"
             }
         }
         stage('Test') {
