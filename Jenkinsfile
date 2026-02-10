@@ -1,15 +1,36 @@
 pipeline {
     agent any
     stages {
-        stage('Install') {
+        stage('checkout code') {
             steps {
-                echo "bat how are you iam fine"
+                git 'https://github.com/pranavvengatesh/pastebin-lite.git'
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo "hisbisdshd"
+                sh 'echo "Building the app"'
             }
         }
+        stage('Test'){
+            steps{
+                sh 'echo "test  running"'
+                
+            }
+        }
+        stage('Deploy'){
+           steps{
+               sh 'echo "Deploying the app"'
+               
+           }
+            
+        }
+    }
+}
+post{
+    success{
+        bat 'echo "build successfull"'
+    }
+    failure{
+        bat 'echo "Build failed"'
     }
 }
