@@ -2,10 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Install') {
-            echo { "bat 'npm install' "}
+            echo { "bat how are you  "}
         }
         stage('Test') {
-            echo {" bat 'npm test'"}
+            echo {"hisbishjbhdshd"}
         }
     }
 }
