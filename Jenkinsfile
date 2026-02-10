@@ -1,36 +1,38 @@
 pipeline {
     agent any
+
     stages {
-        stage('checkout code') {
+        stage('Checkout Code') {
             steps {
                 git 'https://github.com/pranavvengatesh/pastebin-lite.git'
             }
         }
+
         stage('Build') {
             steps {
-                sh 'echo "Building the app"'
+                bat 'echo Building the app'
             }
         }
-        stage('Test'){
-            steps{
-                sh 'echo "test  running"'
-                
+
+        stage('Test') {
+            steps {
+                bat 'echo Test running'
             }
         }
-        stage('Deploy'){
-           steps{
-               sh 'echo "Deploying the app"'
-               
-           }
-            
+
+        stage('Deploy') {
+            steps {
+                bat 'echo Deploying the app'
+            }
         }
     }
-}
-post{
-    success{
-        bat 'echo "build successfull"'
-    }
-    failure{
-        bat 'echo "Build failed"'
+
+    post {
+        success {
+            bat 'echo Build successful'
+        }
+        failure {
+            bat 'echo Build failed'
+        }
     }
 }
