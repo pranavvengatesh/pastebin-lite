@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/pranavvengatesh/pastebin-lite.git'
+                 git branch: 'main',
+            url: 'https://github.com/pranavvengatesh/pastebin-lite.git'
             }
         }
 
